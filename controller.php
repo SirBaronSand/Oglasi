@@ -2,8 +2,6 @@
 
     include_once "model.php";
     include_once "view.php";
-    include_once "config.php";
-
 
     
     class OglasController
@@ -19,14 +17,14 @@
 
         public function prikaziSveOglase()
         {
-            $oglasi=$this->model->dohvatiOglase()->fetchAll(PDO::FETCH_ASSOC);
+            $oglasi=$this->model->dohvatiSveOglase()->fetchAll(PDO::FETCH_ASSOC);
             $this->view->prikaziOglase($oglasi);
         }
 
-        public function dodajOglas($naslov, $oglas, $cijena, $kontakt, $korisnicko_ime)
+        public function dodajOglas($naslov, $sadrzaj, $cijena, $kontakt, $korisnicko_ime)
         {
             $this->model->naslov=$naslov;
-            $this->model->oglas=$oglas;
+            $this->model->sadrzaj=$sadrzaj;
             $this->model->cijena=$cijena;
             $this->model->kontakt=$kontakt;
             $this->model->korisnicko_ime=$korisnicko_ime;

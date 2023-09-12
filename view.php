@@ -24,15 +24,15 @@
             ';
         }
 
-        public function prikaziSveOglase($oglasi)
+        public function prikaziOglase($oglasi)
         {
             foreach($oglasi as $oglas)
             {
-                echo "<h1>{$oglas['naslov']}</h1>";
-                echo "<p>{$oglas['sadrzaj']}</p>";
-                echo "<p>{$oglas['cijena']}</p>";
-                echo "<p>{$oglas['kontakt']}</p>";
-                echo "<p>{$oglas['korisnicko_ime']}</p>";
+                echo "Naslov: <br><h1>{$oglas['naslov']}</h1>";
+                echo "Opis: <br><p>{$oglas['sadrzaj']}</p>";
+                echo "Cijena: <br><p>{$oglas['cijena']}</p>";
+                echo "Kontakt: <br><p>{$oglas['kontakt']}</p>";
+                echo "Korisnik: <br><p>{$oglas['korisnicko_ime']}</p>";
             }
         }
     }
