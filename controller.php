@@ -15,9 +15,9 @@
             $this->view=$view;
         }
 
-        public function prikaziSveOglase()
+        public function prikaziOglase()
         {
-            $oglase=$this->model->dohvatiSveOglase()->fetchAll(PDO::FETCH_ASSOC);
+            $oglase=$this->model->dohvatiOglase()->fetchAll(PDO::FETCH_ASSOC);
             $this->view->prikaziOglase($oglase);
         }
 

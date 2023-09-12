@@ -24,7 +24,7 @@ if($_POST)
     $controller->dodajOglas($naslov, $oglas, $cijena, $kontakt, $korisnicko_ime);
 }
 
-$controller->prikaziSveOglase();
+$controller->prikaziOglase();
 
 
 

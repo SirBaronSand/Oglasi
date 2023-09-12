@@ -18,7 +18,7 @@
             ';
         }
 
-        public function prikaziOglas($oglasi)
+        public function prikaziOglase($oglasi)
         {
             foreach($oglasi as $oglas)
             {
