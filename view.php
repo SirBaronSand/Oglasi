@@ -89,11 +89,11 @@
         {
             foreach($oglasi as $oglas)
             {
-                echo "Naslov: <br><h1>{$oglas['naslov']}</h1>";
+                echo "<br><h1>{$oglas['naslov']}</h1>";
                 echo "Opis: <br><p>{$oglas['sadrzaj']}</p>";
                 echo "Cijena: <br><p>{$oglas['cijena']} €</p>";
                 echo "Kontakt: <br><p>{$oglas['kontakt']}</p>";
-                echo "Korisnik: <br><p>{$oglas['korisnicko_ime']}</p>";
+                echo "Korisnik: <br><p>{$oglas['korisnicko_ime']}</p><br>";
             }
         }
     }
