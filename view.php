@@ -7,11 +7,17 @@
             echo '
             
                 <form method="post" action="index.php">
+                    Naslov: <br>
                     <input type="text" name="naslov">
-                    <textarea name="oglas"></textarea>
-                    <input type="number" name="cijena">
+                    <br> Oglas: <br>
+                    <textarea name="sadrzaj"></textarea>
+                    <br> Cijena: <br>
+                    <input type="text" name="cijena">
+                    <br> Kontakt: <br>
                     <input type="text" name="kontakt">
+                    <br> Korisnicko ime: <br>
                     <input type="text" name="korisnicko_ime">
+                    <br>
                     <input type="submit" value="OBJAVI OGLAS">
                 </form>
 
@@ -23,7 +29,7 @@
             foreach($oglasi as $oglas)
             {
                 echo "<h1>{$oglas['naslov']}</h1>";
-                echo "<p>{$oglas['oglas']}</p>";
+                echo "<p>{$oglas['sadrzaj']}</p>";
                 echo "<p>{$oglas['cijena']}</p>";
                 echo "<p>{$oglas['kontakt']}</p>";
                 echo "<p>{$oglas['korisnicko_ime']}</p>";

@@ -1,6 +1,6 @@
 <?php
 
-    include_once "config.php";
+    include_once "Database.php";
 
     class Oglas
     {
@@ -9,7 +9,7 @@
         
         public $id_oglas;
         public $naslov;
-        public $oglas;
+        public $sadrzaj;
         public $cijena;
         public $kontakt;
         public $korisnicko_ime;
@@ -31,10 +31,10 @@
             $query="INSERT INTO ".$this->table." (naslov, oglas, cijena, kontakt, korisnicko_ime) VALUES (:naslov, :oglas, :cijena, :kontakt, :korisnicko_ime)";
             $stmt=$this->conn->prepare($query);
             $this->naslov=htmlspecialchars(strip_tags($this->naslov));
-            $this->oglas=htmlspecialchars(strip_tags($this->oglas));
+            $this->sadrzaj=htmlspecialchars(strip_tags($this->sadrzaj));
 
             $stmt->bindParam(":naslov",$this->naslov);
-            $stmt->bindParam(":oglas",$this->oglas);
+            $stmt->bindParam(":oglas",$this->sadrzaj);
             $stmt->bindParam(":cijena",$this->cijena);
             $stmt->bindParam(":kontakt",$this->kontakt);
             $stmt->bindParam(":korisnicko_ime",$this->korisnicko_ime);

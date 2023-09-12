@@ -4,6 +4,8 @@
     include_once "view.php";
     include_once "config.php";
 
+
+    
     class OglasController
     {
         private $model;
