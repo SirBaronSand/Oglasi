@@ -15,7 +15,7 @@
             $this->view=$view;
         }
 
-        public function prikaziOglase()
+        public function prikaziSveOglase()
         {
             $oglase=$this->model->dohvatiOglase()->fetchAll(PDO::FETCH_ASSOC);
             $this->view->prikaziOglase($oglase);

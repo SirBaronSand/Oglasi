@@ -18,7 +18,7 @@
             $this->conn=$db;
         }
 
-        public function dohvatiOglase()
+        public function dohvatiSveOglase()
         {
             $query="SELECT * FROM ".$this->table;
             $stmt=$this->conn->prepare($query); 
