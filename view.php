@@ -24,7 +24,7 @@
             ';
         }
 
-        public function prikaziOglase($oglasi)
+        public function prikaziSveOglase($oglasi)
         {
             foreach($oglasi as $oglas)
             {

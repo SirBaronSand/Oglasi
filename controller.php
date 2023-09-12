@@ -19,8 +19,8 @@
 
         public function prikaziSveOglase()
         {
-            $oglase=$this->model->dohvatiOglase()->fetchAll(PDO::FETCH_ASSOC);
-            $this->view->prikaziOglase($oglase);
+            $oglasi=$this->model->dohvatiOglase()->fetchAll(PDO::FETCH_ASSOC);
+            $this->view->prikaziOglase($oglasi);
         }
 
         public function dodajOglas($naslov, $oglas, $cijena, $kontakt, $korisnicko_ime)
