@@ -78,7 +78,7 @@
                     <input type="text" name="kontakt">
                     <br> Korisnicko ime: <br>
                     <input type="text" name="korisnicko_ime">
-                    <br>
+                    <br><br>
                     <input type="submit" value="OBJAVI OGLAS">
                 </form>
 
